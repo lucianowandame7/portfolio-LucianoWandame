@@ -1,0 +1,238 @@
+/* Media Query para telas menores que 576px */
+
+@media (max-width: 1500px) {
+    #projetos{
+        height: 350vh;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+
+   
+    nav .logo {
+        display: none; /* Esconde o logo no mobile */
+    }
+
+
+
+    nav{
+        height: 40px;
+        padding: 10px 0;
+    }
+
+
+
+    nav a:hover {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+
+    .menu-hamburguer {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    /* Esconde a navegação padrão em telas menores */
+    .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #80BFFF;
+        position: absolute;
+        top: 5.2vh;
+        left: 0;
+        padding: 10px 0;
+        z-index: 1;
+        align-items: center;
+    }
+
+    /* Navegação exibida ao abrir o menu */
+    .navigation.open {
+        display: flex;
+    }
+
+   
+
+
+    .apresentacao a > button {
+        width: 25%;
+    }
+
+    .apresentacao-texto h1:first-child {
+        font-size: 2em;
+        
+    }
+
+    .apresentacao-texto h1:nth-child(2) {
+        font-size: 2em;
+    }
+
+
+#sobre-mim{
+   height: 150vh;
+}
+
+.sobre-mim-texto{
+    margin-top: 20%;
+
+
+
+}
+
+#projetos{
+    height: 300vh;
+}
+
+#projetos img:hover {
+    transform:none
+}
+
+.icone-link {
+
+    font-size: 1.6em; 
+}
+.icone-link a{
+
+   text-align: center;
+   height: 25px;
+   width: 100px;
+
+}
+
+.icone-link a > i {
+   font-size: 30em;
+   margin-top: 4%;
+}
+
+.habilidades {
+    height: 150vh;
+    border-radius: 0;
+    background-color: #80BFFF;
+    border: none;
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    transform: none;
+    top: 0;
+    margin-left: 0%;
+}
+
+.frontend, .backend {
+    flex: 0 0 auto; /* Faz com que cada seção ocupe apenas o espaço necessário */
+    margin: 0px;  /* Espaçamento entre as seções */
+    text-align: center;
+}
+
+.habilidades i:hover,
+.habilidades svg:hover,
+.habilidades img:hover {
+    transform: none;
+    transition: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    .apresentacao {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .apresentacao-texto {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .apresentacao-texto h1 {
+        font-size: 1.8em;
+    }
+
+    .apresentacao-texto button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .apresentacao .foto-Luciano {
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    #projetos {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .design-projetos {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #projetos img {
+        width: 100%;
+        height: auto;
+    }
+
+    .design-projetos-texto {
+        padding: 10px;
+    }
+
+    .habilidades {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .frontend, .backend {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .frontend{
+        border-right: none; /* Linha branca separando frontend e backend */
+    }
+    .backend{
+        border-left: none; /* Linha branca separando frontend e backend */
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .icone-link a {
+        font-size: 0.8em;
+        padding: 5px 8px;
+    }
+
+    .icone-link a i {
+        font-size: 1em;
+    }
+}
