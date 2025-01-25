@@ -16,6 +16,7 @@
         width: 100%;
     }
 
+    
     nav .logo {
         display: none;
         /* Esconde o logo no mobile */
@@ -62,6 +63,10 @@
         padding: 10px 0;
         z-index: 1;
         align-items: center;
+    }
+
+    .apresentacao {
+        height: 120vh;
     }
 
     .apresentacao-texto h1:first-child {

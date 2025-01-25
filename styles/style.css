@@ -34,6 +34,7 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", serif;
+    max-width: 100%;
 }
 
 body {
