@@ -228,6 +228,25 @@ nav a:hover {
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 .apresentacao-texto button {
     background-color: #007BFF;  /* Cor de fundo verde */
     color: white; /* Cor do texto do botão */
@@ -296,25 +315,19 @@ nav a:hover {
     animation: fadeIn 1s ease-out 0.5s forwards, colorChange 2s ease-in-out 1s forwards; /* Animações */
 }
 
-/* Animações */
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
-@keyframes slideInFromTop {
-    0% {
-        transform: translateY(-50px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

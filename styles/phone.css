@@ -1,7 +1,7 @@
 /* Media Query para telas menores que 576px */
 
 @media (max-width: 1500px) {
-    #projetos{
+    #projetos {
         height: 350vh;
     }
 }
@@ -11,17 +11,18 @@
 @media (max-width: 768px) {
 
 
-    body{
+    body {
         overflow-x: hidden;
     }
-   
+
     nav .logo {
-        display: none; /* Esconde o logo no mobile */
+        display: none;
+        /* Esconde o logo no mobile */
     }
 
 
 
-    nav{
+    nav {
         height: 40px;
         padding: 10px 0;
     }
@@ -34,7 +35,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
 
 
     .menu-hamburguer {
@@ -43,10 +44,10 @@
         right: 20px;
         top: 15px;
         transition: transform 0.3s ease;
-       
+
     }
 
-    
+
 
     /* Esconde a navegação padrão em telas menores */
     .navigation {
@@ -73,13 +74,13 @@
         opacity: 1;
     }
 
-    .apresentacao a > button {
+    .apresentacao a>button {
         width: 25%;
     }
 
     .apresentacao-texto h1:first-child {
         font-size: 2em;
-        
+
     }
 
     .apresentacao-texto h1:nth-child(2) {
@@ -87,86 +88,14 @@
     }
 
 
-#sobre-mim{
-   height: 150vh;
-}
+    #sobre-mim {
+        height: 150vh;
+    }
 
-.sobre-mim-texto{
-    margin-top: 40%;
+    .sobre-mim-texto {
+        margin-top: 60%;
 
-
-
-}
-
-#projetos{
-    height: 300vh;
-}
-
-#projetos img:hover {
-    transform:none
-}
-
-.icone-link {
-
-    font-size: 1.3em; 
-}
-.icone-link a{
-
-   text-align: center;
-   height: 23px;
-   width: 100px;
-
-}
-
-.icone-link a > i {
-   font-size: 30em;
-   margin-top: 4%;
-}
-
-
-#habilidades{
-    display: flex;
-    flex-direction: column;
-    height: 200vh;
-}
-.habilidades {
-    display: flex;
-    flex-direction: column;
-    height: 150vh;
-    border-radius: 0;
-    background-color: #80BFFF;
-    border: none;
-    display: flex;
-    flex-direction: column; /* Organiza os itens em uma coluna */
-    align-items: center;
-    margin: 0;
-    text-align: center;
-    transform: none;
-    top: 0;
-    margin-left: 0%;
-}
-
-.frontend, .backend {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 auto; /* Faz com que cada seção ocupe apenas o espaço necessário */
-    margin: 0px;  /* Espaçamento entre as seções */
-    text-align: center;
-}
-
-
-
-.habilidades i:hover,
-.habilidades svg:hover,
-.habilidades img:hover {
-    transform: none;
-    transition: none;
-}
-
-
-footer > p {
-    margin-bottom: 5%;
-}
+    }
 
 
 
@@ -177,7 +106,92 @@ footer > p {
 
 
 
-    
+
+
+
+
+
+
+
+    #projetos {
+        height: 300vh;
+    }
+
+    #projetos img:hover {
+        transform: none
+    }
+
+    .icone-link {
+        font-size: 1.3em;
+    }
+
+    .icone-link a {
+        text-align: center;
+        height: 23px;
+        width: 100px;
+
+    }
+
+
+    #habilidades {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        border-radius: 0;
+        background-color: #80BFFF;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        /* Organiza os itens em uma coluna */
+        align-items: center;
+        margin: 0;
+        text-align: center;
+        transform: none;
+        top: 0;
+        margin-left: 0%;
+    }
+
+    .frontend,
+    .backend {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 auto;
+        /* Faz com que cada seção ocupe apenas o espaço necessário */
+        margin: 0px;
+        /* Espaçamento entre as seções */
+        text-align: center;
+    }
+
+
+
+    .habilidades i:hover,
+    .habilidades svg:hover,
+    .habilidades img:hover {
+        transform: none;
+        transition: none;
+    }
+
+
+    footer>p {
+        margin-bottom: 5%;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -235,16 +249,20 @@ footer > p {
         padding: 10px;
     }
 
-    .frontend, .backend {
+    .frontend,
+    .backend {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .frontend{
-        border-right: none; /* Linha branca separando frontend e backend */
+    .frontend {
+        border-right: none;
+        /* Linha branca separando frontend e backend */
     }
-    .backend{
-        border-left: none; /* Linha branca separando frontend e backend */
+
+    .backend {
+        border-left: none;
+        /* Linha branca separando frontend e backend */
     }
 
     footer p {
