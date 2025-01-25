@@ -229,20 +229,20 @@
     <script>
         const menuHamburguer = document.querySelector('.menu-hamburguer');
         const menu = document.querySelector('.navigation');
+
         // Verifica se os elementos existem antes de aplicar o evento
         if (menuHamburguer && menu) {
             menuHamburguer.addEventListener('click', () => {
-                // Adiciona ou remove a classe "show" que define o display como flex
-                if (menu.style.display === 'none') {
+                // Verifica o estado atual do menu e ajusta o display e a rotação do ícone
+                if (menu.style.display === 'none' || menu.style.display === '') {
                     menu.style.display = 'flex';
                     menuHamburguer.style.transform = 'rotate(90deg)';
                 } else {
                     menu.style.display = 'none';
-                    menuHamburguer.style.transform = 'rotate(180deg)'
-                    menu.style.transition = 'transform 0.3s ease';
-
+                    menuHamburguer.style.transform = 'rotate(180deg)';
                 }
-            })}
+            });
+        }
 
     </script>
 </body>

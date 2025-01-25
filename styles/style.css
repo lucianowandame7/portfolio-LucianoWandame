@@ -31,6 +31,7 @@
 body{
     background-color: #80BFFF;
     overflow-x: hidden;
+    width: 100%;
 }
 
 nav{
@@ -45,7 +46,7 @@ nav{
   
 }
 nav .navigation {
-    display: none;
+    display: flex;
     justify-content: right;
    
     
@@ -136,6 +137,8 @@ nav a:hover {
     box-sizing: border-box; /* Inclui padding na largura total */
     overflow-wrap: break-word; /* Quebra linhas longas automaticamente */
     max-width: 100%; /* Garante que o conteúdo não ultrapasse a tela */
+    background-color: #F9F9F9 ;
+    height: 100vh;
   
 }
 
@@ -148,6 +151,29 @@ nav a:hover {
 
 .apresentacao-texto{
     margin-right: 25%;
+}
+
+
+.apresentacao-texto a {
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.apresentacao-texto button {
+    background-color: #007BFF;  /* Cor de fundo verde */
+    color: white; /* Cor do texto do botão */
+    font-size: 18px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    width: 100%;
+    opacity: 0; /* Começa invisível */
+    animation: buttonAppear 2s ease-in-out 3s forwards; /* A animação do botão começa após a animação do texto */
+}
+
+.apresentacao-texto button:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
 }
 
 .apresentacao-texto h1:first-child {
@@ -213,9 +239,6 @@ nav a:hover {
     }
 }
 
-.apresentacao-texto a {
-    text-decoration: none; /* Remove o sublinhado do link */
-}
 
 @keyframes buttonAppear {
     0% {
@@ -247,35 +270,27 @@ nav a:hover {
 }
 
 
-.apresentacao-texto button {
-    background-color: #007BFF;  /* Cor de fundo verde */
-    color: white; /* Cor do texto do botão */
-    font-size: 18px; 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
-    width: 100%;
-    opacity: 0; /* Começa invisível */
-    animation: buttonAppear 2s ease-in-out 3s forwards; /* A animação do botão começa após a animação do texto */
-}
-
-.apresentacao-texto button:hover {
-    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
-}
 
 
 
-.apresentacao{
-    background-color: #F9F9F9 ;
-    height: 100vh;
-}
 
-#projetos {
-    background-color: #F9F9F9 ;
-    height: 100vh;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -338,7 +353,10 @@ nav a:hover {
 
 #projetos {
     min-height: 200vh;
+    background-color: #F9F9F9 ;
+    height: 100vh;
 }
+
 
 #projetos .projetos-h2 {
     font-size: 4em;
