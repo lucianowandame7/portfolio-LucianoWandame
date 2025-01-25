@@ -1,58 +1,69 @@
 ::-webkit-scrollbar {
-    width: 12px; /* Largura da barra de rolagem */
-    height: 12px; /* Altura da barra de rolagem horizontal */
+    width: 12px;
+    /* Largura da barra de rolagem */
+    height: 12px;
+    /* Altura da barra de rolagem horizontal */
 }
 
 /* Personaliza o fundo da barra de rolagem */
 ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Cor do fundo da barra */
-    border-radius: 10px; /* Borda arredondada */
+    background-color: #f1f1f1;
+    /* Cor do fundo da barra */
+    border-radius: 10px;
+    /* Borda arredondada */
 }
 
 /* Personaliza a parte "deslizante" (thumb) da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background-color: #007BFF; /* Cor azul para o thumb */
-    border-radius: 10px; /* Borda arredondada */
-    border: 3px solid #f1f1f1; /* Adiciona um espaçamento entre o thumb e o track */
+    background-color: #007BFF;
+    /* Cor azul para o thumb */
+    border-radius: 10px;
+    /* Borda arredondada */
+    border: 3px solid #f1f1f1;
+    /* Adiciona um espaçamento entre o thumb e o track */
 }
 
 /* Personaliza a parte "deslizante" quando está sendo focada */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #0056b3; /* Cor azul mais escura quando o cursor está sobre o thumb */
+    background-color: #0056b3;
+    /* Cor azul mais escura quando o cursor está sobre o thumb */
 }
 
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", serif;   
+    font-family: "Roboto", serif;
 }
 
-body{
+body {
     background-color: #80BFFF;
     overflow-x: hidden;
     width: 100%;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     background-color: #80BFFF;
     height: 10vh;
     width: 100%;
     position: fixed;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.445); /* Sombra suave */;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.445);
+    /* Sombra suave */
+    ;
     z-index: 1;
-  
+
 }
+
 nav .navigation {
     display: flex;
     justify-content: right;
-   
-    
+
+
 }
 
-nav .logo{
+nav .logo {
     display: flex;
     align-items: center;
     padding: 15px;
@@ -72,20 +83,23 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ffffff; /* Cor de fundo mais clara ao passar o mouse */
+    background-color: #ffffff;
+    /* Cor de fundo mais clara ao passar o mouse */
     color: #80BFFF;
     transition: 0.4s;
 }
 
 
 .menu-hamburguer {
-    display: none; /* Escondido em telas maiores */
+    display: none;
+    /* Escondido em telas maiores */
     flex-direction: column;
     justify-content: center;
     padding: 5px;
     gap: 5px;
     cursor: pointer;
-    z-index: 2; /* Garante que fique acima do restante */
+    z-index: 2;
+    /* Garante que fique acima do restante */
 }
 
 /* Barras do menu hambúrguer */
@@ -99,115 +113,150 @@ nav a:hover {
 
 
 
-.icones-social{
-    font-size: 3em;  /* Aumentei o tamanho dos ícones */
-    margin: 10px; /* Cor dos ícones */
+.icones-social {
+    font-size: 3em;
+    /* Aumentei o tamanho dos ícones */
+    margin: 10px;
+    /* Cor dos ícones */
     transition: color 0.3s;
-   
+
 }
 
 .fab.fa-linkedin {
-    color: #0077b5; /* Azul oficial do LinkedIn */
+    color: #0077b5;
+    /* Azul oficial do LinkedIn */
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .fab.fa-linkedin:hover {
-    color: #0056b3; /* Azul mais escura ao passar o mouse */
+    color: #0056b3;
+    /* Azul mais escura ao passar o mouse */
     transform: scale(1.2);
 }
 
 .fab.fa-github {
-    color: black; /* Cor inicial do ícone */
-    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza o efeito de tamanho e cor */
+    color: black;
+    /* Cor inicial do ícone */
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Suaviza o efeito de tamanho e cor */
 }
 
 .fab.fa-github:hover {
-    color: #6e5494; /* Roxo escuro, uma das cores associadas ao GitHub */
-    transform: scale(1.2); /* Aumenta o tamanho em 20% */
+    color: #6e5494;
+    /* Roxo escuro, uma das cores associadas ao GitHub */
+    transform: scale(1.2);
+    /* Aumenta o tamanho em 20% */
 }
 
 
-.apresentacao{
-    display: flex;                      /* Usando Flexbox para disposição */
-    justify-content: center;            /* Centraliza o conteúdo no eixo horizontal */
-    align-items: center;                /* Alinha os itens no centro do eixo vertical */                                            /* Ocupa toda a altura da tela */
-    padding: 0 20px;   
-    padding-left: 20px; 
+.apresentacao {
+    display: flex;
+    /* Usando Flexbox para disposição */
+    justify-content: center;
+    /* Centraliza o conteúdo no eixo horizontal */
+    align-items: center;
+    /* Alinha os itens no centro do eixo vertical */
+    /* Ocupa toda a altura da tela */
+    padding: 0 20px;
+    padding-left: 20px;
     width: 100%;
-    box-sizing: border-box; /* Inclui padding na largura total */
-    overflow-wrap: break-word; /* Quebra linhas longas automaticamente */
-    max-width: 100%; /* Garante que o conteúdo não ultrapasse a tela */
-    background-color: #F9F9F9 ;
+    box-sizing: border-box;
+    /* Inclui padding na largura total */
+    overflow-wrap: break-word;
+    /* Quebra linhas longas automaticamente */
+    max-width: 100%;
+    /* Garante que o conteúdo não ultrapasse a tela */
+    background-color: #F9F9F9;
     height: 100vh;
-  
+
 }
 
 
-.apresentacao h1{
-    word-wrap: break-word; /* Quebra palavras longas */
-    max-width: 100%; /* Impede o texto de ultrapassar a tela */
+.apresentacao h1 {
+    word-wrap: break-word;
+    /* Quebra palavras longas */
+    max-width: 100%;
+    /* Impede o texto de ultrapassar a tela */
     overflow-wrap: break-word;
 }
 
-.apresentacao-texto{
+.apresentacao-texto {
     margin-right: 25%;
 }
 
 
 .apresentacao-texto a {
-    text-decoration: none; /* Remove o sublinhado do link */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
 }
 
 .apresentacao-texto button {
-    background-color: #007BFF;  /* Cor de fundo verde */
-    color: white; /* Cor do texto do botão */
-    font-size: 18px; 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    background-color: #007BFF;
+    /* Cor de fundo verde */
+    color: white;
+    /* Cor do texto do botão */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     width: 100%;
-    opacity: 0; /* Começa invisível */
-    animation: buttonAppear 2s ease-in-out 3s forwards; /* A animação do botão começa após a animação do texto */
+    opacity: 0;
+    /* Começa invisível */
+    animation: buttonAppear 2s ease-in-out 3s forwards;
+    /* A animação do botão começa após a animação do texto */
 }
 
 .apresentacao-texto button:hover {
-    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+    background-color: #0056b3;
+    /* Cor de fundo mais escura ao passar o mouse */
 }
 
 .apresentacao-texto h1:first-child {
     font-family: 'Arial', sans-serif;
     font-size: 3em;
     color: #333;
-    overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
-    border-right: 4px solid #333; /* Imita o cursor de digitação */
-    width: 0; /* Começa com largura 0 */
-    white-space: nowrap; /* Impede que o texto quebre linha */
-    animation: typing 3s steps(30) 1s forwards, blink-caret 0.75s step-end infinite, hide-caret 10s forwards; /* Animações */
+    overflow: hidden;
+    /* Esconde o texto que ainda não foi "digitado" */
+    border-right: 4px solid #333;
+    /* Imita o cursor de digitação */
+    width: 0;
+    /* Começa com largura 0 */
+    white-space: nowrap;
+    /* Impede que o texto quebre linha */
+    animation: typing 3s steps(30) 1s forwards, blink-caret 0.75s step-end infinite, hide-caret 10s forwards;
+    /* Animações */
 }
 
 .apresentacao-texto h1:nth-child(2) {
     font-family: 'Arial', sans-serif;
     font-size: 3em;
     color: #333;
-  
+
 }
 
 
 .apresentacao .foto-Luciano {
-    width: 250px; /* Define o tamanho inicial */
-    height: 250px; /* Mantém a proporção */
-    border-radius: 50%; /* Faz a imagem ficar circular */
+    width: 250px;
+    /* Define o tamanho inicial */
+    height: 250px;
+    /* Mantém a proporção */
+    border-radius: 50%;
+    /* Faz a imagem ficar circular */
     border-color: black;
-    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    object-fit: cover;
+    /* Garante que a imagem cubra a área sem distorcer */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transição suave */
     left: right;
 }
 
 .foto-Luciano:hover {
-    transform: scale(1.1); /* Aumenta a imagem */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    transform: scale(1.1);
+    /* Aumenta a imagem */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra */
 }
 
 
@@ -216,6 +265,7 @@ nav a:hover {
     0% {
         width: 0;
     }
+
     100% {
         width: 100%;
     }
@@ -226,16 +276,18 @@ nav a:hover {
     50% {
         border-color: transparent;
     }
+
     100% {
         border-color: #333;
     }
 
-    
+
 }
 
 @keyframes hide-caret {
     100% {
-        border-color: transparent; /* Esconde o cursor */
+        border-color: transparent;
+        /* Esconde o cursor */
     }
 }
 
@@ -243,11 +295,14 @@ nav a:hover {
 @keyframes buttonAppear {
     0% {
         opacity: 0;
-        transform: translateY(20px); /* O botão começa um pouco mais abaixo */
+        transform: translateY(20px);
+        /* O botão começa um pouco mais abaixo */
     }
+
     100% {
         opacity: 1;
-        transform: translateY(0); /* O botão vai para sua posição normal */
+        transform: translateY(0);
+        /* O botão vai para sua posição normal */
     }
 }
 
@@ -255,6 +310,7 @@ nav a:hover {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -264,6 +320,7 @@ nav a:hover {
     0% {
         transform: translateY(-50px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -294,8 +351,9 @@ nav a:hover {
 
 
 
-#sobre-mim, #habilidades {
-    background-color:  #80BFFF    ;
+#sobre-mim,
+#habilidades {
+    background-color: #80BFFF;
     height: 100vh;
 }
 
@@ -304,30 +362,47 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
     height: 100vh;
-    padding: 40px; /* Ajuste no padding para maior espaçamento */
-    text-align: center; /* Centraliza o texto dentro de cada elemento */
+    padding: 40px;
+    /* Ajuste no padding para maior espaçamento */
+    text-align: center;
+    /* Centraliza o texto dentro de cada elemento */
 }
 
 .sobre-mim-texto h2 {
-    font-family: "Bebas Neue", sans-serif; /* Fonte estilizada */
-    font-size: 4em; /* Aumenta o tamanho da fonte */
-    color: white; /* Cor do texto */
-    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
-    opacity: 0; /* Começa invisível para animação */
-    animation: fadeIn 1s ease-out forwards, slideInFromTop 1s ease-out forwards; /* Animações */
+    font-family: "Bebas Neue", sans-serif;
+    /* Fonte estilizada */
+    font-size: 4em;
+    /* Aumenta o tamanho da fonte */
+    color: white;
+    /* Cor do texto */
+    margin-bottom: 20px;
+    /* Adiciona espaçamento abaixo do título */
+    opacity: 0;
+    /* Começa invisível para animação */
+    animation: fadeIn 1s ease-out forwards, slideInFromTop 1s ease-out forwards;
+    /* Animações */
 }
 
 .sobre-mim-texto p {
-    font-size: 1.2em; /* Tamanho de fonte maior para o texto */
-    color: black; /* Cor inicial do texto */
-    line-height: 1.6; /* Aumenta a altura da linha para melhor legibilidade */
-    max-width: 800px; /* Limita a largura do texto */
-    margin-top: 20px; /* Adiciona espaço entre o título e o texto */
-    padding: 0 20px; /* Adiciona um pouco de espaço nas laterais */
-    opacity: 0; /* Começa invisível para animação */
-    animation: fadeIn 1s ease-out 0.5s forwards, colorChange 2s ease-in-out 1s forwards; /* Animações */
+    font-size: 1.2em;
+    /* Tamanho de fonte maior para o texto */
+    color: black;
+    /* Cor inicial do texto */
+    line-height: 1.6;
+    /* Aumenta a altura da linha para melhor legibilidade */
+    max-width: 800px;
+    /* Limita a largura do texto */
+    margin-top: 20px;
+    /* Adiciona espaço entre o título e o texto */
+    padding: 0 20px;
+    /* Adiciona um pouco de espaço nas laterais */
+    opacity: 0;
+    /* Começa invisível para animação */
+    animation: fadeIn 1s ease-out 0.5s forwards, colorChange 2s ease-in-out 1s forwards;
+    /* Animações */
 }
 
 
@@ -353,7 +428,7 @@ nav a:hover {
 
 #projetos {
     min-height: 200vh;
-    background-color: #F9F9F9 ;
+    background-color: #F9F9F9;
     height: 100vh;
 }
 
@@ -362,41 +437,48 @@ nav a:hover {
     font-size: 4em;
 }
 
-.design-projetos-caixa-projetos{
+.design-projetos-caixa-projetos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; /* Ajusta o espaçamento entre os itens */
-    gap: 20px; /* Espaçamento entre os projetos */
+    justify-content: space-evenly;
+    /* Ajusta o espaçamento entre os itens */
+    gap: 20px;
+    /* Espaçamento entre os projetos */
 }
 
 .design-projetos {
     display: flex;
     padding: 10px;
     margin: 10px;
-    margin-bottom: 60px; /* Reduzido para menos espaçamento */
+    margin-bottom: 60px;
+    /* Reduzido para menos espaçamento */
     border: 2px solid #000;
     border-radius: 8px;
-    width: 700px; 
-    height: 300px;  /* Reduzido para menor largura */
+    width: 700px;
+    height: 300px;
+    /* Reduzido para menor largura */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.445);
 }
 
 #projetos img {
-    width: 400px;  /* Reduzido para melhor compactação */
+    width: 400px;
+    /* Reduzido para melhor compactação */
     height: 290px;
     object-fit: cover;
     border-radius: 5px;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição suave */
 }
 
 #projetos img:hover {
-    transform: scale(1.05); /* Aumenta o tamanho da imagem em 10% */
+    transform: scale(1.05);
+    /* Aumenta o tamanho da imagem em 10% */
 }
 
 #projetos h2 {
     text-align: center;
     padding: 15px;
-    font-family: "Bebas Neue", sans-serif; 
+    font-family: "Bebas Neue", sans-serif;
     font-size: 3em;
 }
 
@@ -414,7 +496,8 @@ nav a:hover {
 
 .design-projetos-texto p {
     margin: 5px;
-    font-size: 1em; /* Tamanho levemente reduzido */
+    font-size: 1em;
+    /* Tamanho levemente reduzido */
 }
 
 .design-projetos p:nth-child(1) {
@@ -429,17 +512,20 @@ nav a:hover {
 }
 
 .icone-link {
-    display: inline-flex;  /* Alinha o ícone e o texto na mesma linha */
-    align-items: center;   /* Centraliza verticalmente o ícone e o texto */
-    gap: 10px;       
-        /* Adiciona um espaço entre o ícone e o texto */
+    display: inline-flex;
+    /* Alinha o ícone e o texto na mesma linha */
+    align-items: center;
+    /* Centraliza verticalmente o ícone e o texto */
+    gap: 10px;
+    /* Adiciona um espaço entre o ícone e o texto */
 }
 
 .icone-link a {
     text-decoration: none;
     color: #fff;
     background-color: #007BFF;
-    padding: 6px 10px;  /* Tamanho do botão */
+    padding: 6px 10px;
+    /* Tamanho do botão */
     border-radius: 4px;
     text-align: center;
     transition: background-color 0.3s;
@@ -471,16 +557,19 @@ nav a:hover {
     font-family: "Bebas Neue", sans-serif;
     font-size: 4em;
     color: white;
-   
+
 }
 
 .habilidades {
     display: flex;
-    justify-content: space-around; /* Coloca as seções com espaçamento entre elas */
-    flex-wrap: wrap; /* Permite que as seções quebrem linha em telas menores */
+    justify-content: space-around;
+    /* Coloca as seções com espaçamento entre elas */
+    flex-wrap: wrap;
+    /* Permite que as seções quebrem linha em telas menores */
     margin: 5px;
     border: 2px solid #fff;
-    padding: 10px; /* Reduzido o padding, aproximando a borda do conteúdo */
+    padding: 10px;
+    /* Reduzido o padding, aproximando a borda do conteúdo */
     width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -491,30 +580,39 @@ nav a:hover {
     background-color: #48b8e4;
 }
 
-.habilidades h3{
+.habilidades h3 {
     color: #fff;
 }
 
-.frontend{
+.frontend {
     margin-right: 20px;
-    border-right: 3px solid #fff; /* Linha branca separando frontend e backend */
+    border-right: 3px solid #fff;
+    /* Linha branca separando frontend e backend */
 }
 
-.backend{
-    border-left: 3px solid #fff; /* Linha branca separando frontend e backend */
+.backend {
+    border-left: 3px solid #fff;
+    /* Linha branca separando frontend e backend */
 }
+
 /* Estilo para cada seção (Frontend e Backend) */
-.frontend, .backend {
-    flex: 1 1 45%; /* Cada seção ocupa 45% do espaço, e o restante será distribuído igualmente */
-    margin: 10px;  /* Espaçamento entre as seções */
+.frontend,
+.backend {
+    flex: 1 1 45%;
+    /* Cada seção ocupa 45% do espaço, e o restante será distribuído igualmente */
+    margin: 10px;
+    /* Espaçamento entre as seções */
     text-align: center;
 }
 
 /* Aplica o layout flex para empilhar os ícones verticalmente em ambas as seções */
-.frontend, .backend {
+.frontend,
+.backend {
     display: flex;
-    flex-direction: column;  /* Coloca os ícones verticalmente */
-    align-items: center;  /* Centraliza os ícones dentro da seção */
+    flex-direction: column;
+    /* Coloca os ícones verticalmente */
+    align-items: center;
+    /* Centraliza os ícones dentro da seção */
 }
 
 h3 {
@@ -524,43 +622,61 @@ h3 {
 
 /* Estilo para os ícones (aumentei o font-size para 3em) */
 .habilidades i {
-    font-size: 3em;  /* Aumentei o tamanho dos ícones */
+    font-size: 3em;
+    /* Aumentei o tamanho dos ícones */
     margin: 10px;
-    color: #007BFF;  /* Cor padrão azul dos ícones */
+    color: #007BFF;
+    /* Cor padrão azul dos ícones */
     transition: color 0.3s;
 }
 
 /* Inicializando as cores originais para os ícones */
 .habilidades i.fa-html5 {
-    color: #e34c26; /* HTML */
+    color: #e34c26;
+    /* HTML */
 }
+
 .habilidades i.fa-css3-alt {
-    color: #2965f1; /* CSS */
+    color: #2965f1;
+    /* CSS */
 }
+
 .habilidades i.fa-js {
-    color: #f7df1e; /* JavaScript */
+    color: #f7df1e;
+    /* JavaScript */
 }
+
 .habilidades i.fa-react {
-    color: #61dafb; /* React */
+    color: #61dafb;
+    /* React */
 }
+
 .habilidades i.fa-php {
-    color: #8e44ad; /* PHP */
+    color: #8e44ad;
+    /* PHP */
 }
+
 .habilidades i.fa-java {
-    color: #b07219; /* Java */
+    color: #b07219;
+    /* Java */
 }
+
 .habilidades i.fa-python {
-    color: #306998; /* Python */
+    color: #306998;
+    /* Python */
 }
+
 .habilidades i.fa-database {
-    color: #7f8c8d; /* SQL (Banco de Dados) */
+    color: #7f8c8d;
+    /* SQL (Banco de Dados) */
 }
 
 /* Efeito de hover */
 .habilidades i:hover,
 .habilidades svg:hover,
 .habilidades img:hover {
-    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+    transform: scale(1.2);
+    /* Aumenta o ícone ao passar o mouse */
     transition: transform 0.3s ease;
 }
 
@@ -568,8 +684,9 @@ h3 {
 
 
 footer {
-    text-align: center; /* Centraliza o conteúdo do footer */
-    margin-top: 0px; 
-    font-size: 1.2em;/* Ajuste opcional para dar um espaço acima */
+    text-align: center;
+    /* Centraliza o conteúdo do footer */
+    margin-top: 0px;
+    font-size: 1.2em;
+    /* Ajuste opcional para dar um espaço acima */
 }
-

@@ -13,6 +13,7 @@
 
     body {
         overflow-x: hidden;
+        width: 100%;
     }
 
     nav .logo {
@@ -50,7 +51,7 @@
 
 
     /* Esconde a navegação padrão em telas menores */
-   nav .navigation {
+    nav .navigation {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -94,7 +95,7 @@
     }
 
     .sobre-mim-texto {
-        margin-top: 60%;
+        margin-top: 80%;
 
     }
 
@@ -178,10 +179,6 @@
         transition: none;
     }
 
-
-    footer>p {
-        margin-bottom: 5%;
-    }
 
 
 
@@ -276,4 +273,10 @@
     .icone-link a i {
         font-size: 1em;
     }
+
+
+    footer>p {
+        margin-bottom: 5%;
+    }
+
 }
