@@ -64,14 +64,16 @@
                 <p>
                     Sou o Luciano, um desenvolvedor apaixonado por tecnologia e programação, atualmente cursando Análise
                     e Desenvolvimento de Sistemas. Tenho experiência no desenvolvimento de soluções web, com foco em
-                    JavaScript, HTML, CSS, React, TypeScript, PHP, Django e MySQL. Estudo a criação de sistemas interativos como carrinhos
+                    JavaScript, HTML, CSS, React, TypeScript, PHP, Django e MySQL. Estudo a criação de sistemas
+                    interativos como carrinhos
                     de compras, autenticação de usuários e integração com banco de dados, sempre buscando aplicar boas
                     práticas de programação e garantir a qualidade do código</p>
                 <p>Atualmente, estou focado em aprimorar minhas habilidades em programação e no desenvolvimento de
                     projetos práticos, com ênfase em eficiência, qualidade e inovação. Estou sempre buscando aprender
                     novas tecnologias e acompanhar as tendências do mercado de TI.</p>
                 <p>Já participei de diversos projetos acadêmicos, desenvolvendo sistemas completos com foco em
-                    performance e experiência do usuário. Tenho experiência em Java, Python e JavaScript, sempre buscando aplicar o conhecimento
+                    performance e experiência do usuário. Tenho experiência em Java, Python e JavaScript, sempre
+                    buscando aplicar o conhecimento
                     técnico para solucionar desafios reais.</p>
             </div>
         </section>
@@ -227,18 +229,21 @@
     <script>
         const menuHamburguer = document.querySelector('.menu-hamburguer');
         const menu = document.querySelector('.navigation');
-
         // Verifica se os elementos existem antes de aplicar o evento
         if (menuHamburguer && menu) {
             menuHamburguer.addEventListener('click', () => {
                 // Adiciona ou remove a classe "show" que define o display como flex
-                if (menu.style.display === 'none' || menu.style.display === '') {
+                if (menu.style.display === 'none') {
                     menu.style.display = 'flex';
+                    menuHamburguer.style.transform = 'rotate(90deg)';
                 } else {
                     menu.style.display = 'none';
+                    menuHamburguer.style.transform = 'rotate(180deg)'
+                    menu.style.transition = 'transform 0.3s ease';
+
                 }
-            });
-        }
+            })}
+
     </script>
 </body>
 
