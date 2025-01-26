@@ -12,11 +12,12 @@
 
 
     body {
+
         overflow-x: hidden;
         width: 100%;
     }
 
-    
+
     nav .logo {
         display: none;
         /* Esconde o logo no mobile */
